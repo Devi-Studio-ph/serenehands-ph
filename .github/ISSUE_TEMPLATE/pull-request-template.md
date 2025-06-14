@@ -1,5 +1,5 @@
 ---
-name: Pull Request
+name: Pull Request template
 about: Please include a summary of the changes and the related issue.   Mention if
   this PR is a bug fix, new feature, or improvement.
 title: ''
