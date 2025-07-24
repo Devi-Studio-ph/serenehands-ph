@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins, Crimson_Pro, Lobster, Limelight } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +11,30 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-poppins",
+});
+
+const crimsonPro = Crimson_Pro({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-crimson",
+});
+
+const lobster = Lobster({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-lobster",
+});
+
+const limelight = Limelight({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-limelight",
 });
 
 export const metadata: Metadata = {
@@ -25,10 +50,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${crimsonPro.variable} ${lobster.variable} ${limelight.variable} antialiased`}
+    >
+      {children}
+    </body>
+
     </html>
   );
 }
