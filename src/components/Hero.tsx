@@ -9,15 +9,15 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-3xl text-center px-4">
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 dark:text-white drop-shadow-md">
-          Serenity Hands
+          Relax at Home with Serene Hands
         </h1>
         <p className="mt-4 text-xl md:text-2xl text-gray-700 dark:text-gray-200">
           Relax. Rejuvenate. Restore.
         </p>
 
         <p className="mt-4 text-sm md:text-base text-gray-600 dark:text-gray-300">
-          Experience the healing power of touch with our professional massage
-          therapy services.
+        We bring professional massage therapy to the comfort of your own home. 
+        Personalized, affordable, and always relaxing.
         </p>
 
         <a
